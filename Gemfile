@@ -6,4 +6,4 @@ gem "github-pages"
 gem "jekyll-remote-theme"
 gem "jekyll-feed"
 gem "jekyll-sitemap"
-
+gem "jekyll-seo-tag"
