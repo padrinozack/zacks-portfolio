@@ -1,38 +1,54 @@
 # ------------------------------------------------------------------------------
-# SITE SETTINGS
+# THEME CONFIGURATION (MUST BE FIRST)
+# ------------------------------------------------------------------------------
+remote_theme: "zerostaticthemes/jekyll-serif-theme@v1.4.0"
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+
+# ------------------------------------------------------------------------------
+# SITE VARIABLES
 # ------------------------------------------------------------------------------
 title: Zachary Dankwah | Cyber Security Analyst
-description: A portfolio showcasing expertise in Cyber Security Analytics, Compliance, IT Governance, and Automation.
-baseurl: "/zacks-portfolio" # The subpath of your site, e.g. /blog
-url: "https://padrinozack.github.io" # The base hostname & protocol for your site
-repository: "padrinoZack/zacks-portfolio"
-minimal_theme:
-  # The theme name must match the one used in your repository settings
-  skin: dark # Options: "air", "dark", "deck", "light", "texture"
-remote_theme: pages-themes/minimal@v0.2.0
-plugins:
-- jekyll-remote-theme  
+description: A professional portfolio showcasing expertise in Compliance, IT Governance, and Automation.
+url: "https://padrinozack.github.io" 
+baseurl: "/zacks-portfolio" # Important for GitHub Pages deployment
+permalink: pretty
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
 # ------------------------------------------------------------------------------
 # AUTHOR & CONTACT SETTINGS
 # ------------------------------------------------------------------------------
-author:
-  name: "Zachary Dankwah"
-  email: "padrinobuisness@gmail.com"
-  
-# Social Media Links (Customize based on your theme's available fields)
-github_username: padrinoZack
-linkedin_username: zachary-dankwah
-# You can uncomment and add other social media links if the theme supports them
-# twitter_username: your_twitter
-# youtube_username: your_youtube
+author: "Zachary Dankwah"
+email: "padrinobuisness@gmail.com"
+github_username: padrinozack
+linkedin_username: zachary-dankwah 
 
 # ------------------------------------------------------------------------------
-# NAVIGATION SETTINGS
+# NAVIGATION MENU
 # ------------------------------------------------------------------------------
-nav_items:
-  - {title: About, url: "/about"}
-  - {title: Projects, url: "/projects"}
-  - {title: Resume, url: "https://link-to-your-hosted-resume.pdf"}
+menu:
+  - title: Home
+    url: /
+  - title: About Me
+    url: /about/
+  - title: Projects
+    url: /projects/
+  - title: Resume
+    url: "YOUR_PUBLIC_PDF_LINK_GOES_HERE" # <-- CRITICAL: UPDATE THIS LINK!
+
+# ------------------------------------------------------------------------------
+# SERVICES/PROJECTS SETTINGS
+# ------------------------------------------------------------------------------
+collections:
+  services:
+    output: true
+    permalink: /services/:path/
 
 # ------------------------------------------------------------------------------
 # EXCLUDE FILES (Standard Jekyll Configuration)
@@ -41,7 +57,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - vendor/
