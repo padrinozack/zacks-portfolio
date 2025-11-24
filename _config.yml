@@ -41,7 +41,7 @@ menu:
   - title: Projects
     url: /projects/
   - title: Resume
-    url: "YOUR_PUBLIC_PDF_LINK_GOES_HERE" # <-- CRITICAL: UPDATE THIS LINK!
+    url: "https://github.com/padrinozack" # <-- CRITICAL: UPDATE THIS LINK!
 
 # ------------------------------------------------------------------------------
 # SERVICES/PROJECTS SETTINGS
