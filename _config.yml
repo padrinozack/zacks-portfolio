@@ -1,6 +1,45 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-minimal
+# ------------------------------------------------------------------------------
+# SITE SETTINGS
+# ------------------------------------------------------------------------------
+title: Zachary Dankwah | Cyber Security Analyst
+description: A portfolio showcasing expertise in Cyber Security Analytics, Compliance, IT Governance, and Automation.
+baseurl: "/zacks-portfolio" # The subpath of your site, e.g. /blog
+url: "https://padrinozack.github.io" # The base hostname & protocol for your site
+repository: "padrinoZack/zacks-portfolio"
+minimal_theme:
+  # The theme name must match the one used in your repository settings
+  skin: dark # Options: "air", "dark", "deck", "light", "texture"
+  
+# ------------------------------------------------------------------------------
+# AUTHOR & CONTACT SETTINGS
+# ------------------------------------------------------------------------------
+author:
+  name: "Zachary Dankwah"
+  email: "padrinobuisness@gmail.com"
+  
+# Social Media Links (Customize based on your theme's available fields)
+github_username: padrinoZack
+linkedin_username: zachary-dankwah
+# You can uncomment and add other social media links if the theme supports them
+# twitter_username: your_twitter
+# youtube_username: your_youtube
+
+# ------------------------------------------------------------------------------
+# NAVIGATION SETTINGS
+# ------------------------------------------------------------------------------
+nav_items:
+  - {title: About, url: "/about"}
+  - {title: Projects, url: "/projects"}
+  - {title: Resume, url: "https://link-to-your-hosted-resume.pdf"}
+
+# ------------------------------------------------------------------------------
+# EXCLUDE FILES (Standard Jekyll Configuration)
+# ------------------------------------------------------------------------------
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
